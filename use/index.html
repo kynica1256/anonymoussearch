@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Netstalk</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<div class="container first">
+			<p class="tourism text">Netstalk(zone)</p>
+			<br>
+			<div class="first-search">
+			    <div class="search-wrapper">
+			    	<input type="text" class="search" placeholder="Url" id="search">
+			    	<br>
+			    	<center><p class="text-1">Мы не несем ответственности за просмотренный вами контент.</p></center>
+			    	<br>
+			    	<center><input type="button" value="Search" class="search-button" onclick="getrequests()"></center>
+			    </div>
+			</div>
+		</div>
+		<div class="search-container" id="search-container">
+			<div id="blockwithelem">
+			    <center>
+			    	<br><br>
+			    	<img src="img/sad.png" id="sad" style="box-shadow: none;height: 200px;">
+			    	<p class="text-2">Вы пока не сдеали ни одного запроса</p>
+			    </center>
+		    </div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#" class="stylehref" onclick="addict(this);">http://hydraruzxpnew4af.onion/</a> - Популярная торговая площадка, в основном продажа ПАВ. Работают по РФ и СНГ. Магазины с автопокупкой и предзаказом, есть встроенные обменники QIWI.</li><br>
+				<li><a href="#" class="stylehref" onclick="addict(this);">http://wayawaytcl3k66fl.onion/</a> - Топовый форум. Самый старый драг-форум клирнета, переехал в тор. В продаже вещества, есть разделы для общения на разные тематики. Много полезной информации в разделе FAQультет . </li><br>
+				<li><a href="#" class="stylehref" onclick="addict(this);">http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page</a> - Hidden wiki.</li><br>
+				<li><a href="#" class="stylehref" onclick="addict(this);">http://www.wikitjerrta4qgz4.onion/</a> - Каталог популярных сайтов в зоне TOR.</li><br>
+				<li><a href="#" class="stylehref" onclick="addict(this);">http://xmh57jrzrnw6insl.onion</a> - Поисковик в зоне TOR.</li><br>
+			</ul>
+		</div>
+		<!--<div class="container second">
+			<div class="gallery-container">
+				<div class="gallery-text">
+					<p class="gallery-header">Gallery</p>
+					<p class="gallery-p">
+						Наш сегодняшний герой не даст тебе пять ни под каким предлогом. Нет, не из-за вредной кошачьей натуры, и не из-за необучаемости пушистых комочков. Шестипалые котики не способны на сей дружеский жест чисто физически, ведь пальцев у них как минимум 6! 6, Карл! Откуда их столько? Кого в этом винить? Насколько это вредно для животины? Так много пальцев, и так мало ответов! Давайте разбираться.
+					</p>
+				</div>
+				<div class="img-container">
+					<img src="img/img21.jpg" class="img3" alt="osdfw">
+					<div class="wrapper">
+						<img src="img/edstert.jpg" class="img2" alt="osdfw">
+						<img src="img/erytty.jpg" class="img1" alt="osdfw">
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<div class="container third">
+			<div class="last-container">
+				<p class="last-header">Net stalk(zone)</p>
+				<p class="last-text">2021</p>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript">
+		function addict(par) {
+			const value = par.innerHTML;
+			document.getElementById("search").value = value;
+		}
+		async function getrequests() {
+			const value = document.getElementById("search").value;
+		    var request = new XMLHttpRequest('http://127.0.0.1:3000/requests?url='+window.btoa(value));
+            request.open("GET", "http://127.0.0.1:3000/requests?url="+window.btoa(value), false);
+            request.send();
+			//document.getElementById("blockwithelem").remove();
+			document.getElementById("search-container").innerHTML = request.responseText;
+		}
+	</script>
+</body>
+</html>

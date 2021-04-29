@@ -1,0 +1,215 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    /**background: transparent;   опционально */
+}
+@font-face {
+	font-family: RobotoR;
+	src:url(../fonts/Roboto-Regular.ttf);
+}
+html, body, main {
+	height: 100%;
+	font-family: RobotoR;
+}
+.text {
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+.text-1 {
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.text-2 {
+	color: black;
+	font-size: 40px;
+}
+.search {
+	background-image: url(../img/loupe.png);
+	background-position: 0px center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 13px 13px;
+	background-size: 13px 13px;
+	padding-left: 20px;
+	/*font-size: 1.5rem;*/
+	height: 30px;
+	font-weight: 600;
+	border: none;
+	letter-spacing: 0.5px;
+	width: 100%;
+	padding-bottom: 3px;
+	transition: 0.3s ease-in;
+	outline: none;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+}
+
+.search-wrapper {
+	width: 50%;
+	margin: auto;
+	justify-content: center;
+    align-items: center;
+}
+
+.search-button {
+	cursor: pointer;
+	color:white;
+	font-size: 20px;
+	width: 50%;
+	height: 60px;
+	border:3px solid white;
+	background-color: transparent;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu {
+	height: auto;
+	width: 100%;
+	background-color: rgba(239, 239, 239, 0.93725);
+	font-size: 20px;
+}
+
+.stylehref {
+	color: black;
+}
+
+.first-search {
+	display: flex;
+	width: 100%;
+	height: 50%;
+}
+
+.search-container {
+	overflow-x: scroll;
+	overflow-y: scroll;
+	height: 600px;
+	width: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.first {
+	height: 100%;
+	background-image: url(../img/image.PNG);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.first p {
+	color: white;
+}
+.tourism {
+	width: 100%;
+	text-align: center;
+	padding-top: 80px;
+	font-size: 20px;
+}
+.text-container {
+	width: 40%;
+	margin-left: 15%;
+	margin-top: 15%;
+}
+.first-line {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	opacity: 0.5;
+	line-height: 1;
+}
+.second-line {
+	text-transform: uppercase;
+	font-size: 64px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	line-height: 1;
+}
+.third-line {
+	font-size: 20px;
+
+}
+.second {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.gallery-container {
+	width: 60%;
+	max-width: 1000px;
+
+}
+.img-container {
+	display: flex;
+	width: 100%;
+	-ms-align-items:flex-start;
+	align-items:flex-start;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+}
+.img1 {
+	width: 55%;
+}
+.wrapper {
+	margin-left: 20px;
+}
+.img2 {
+	margin-bottom: 20px;
+}
+.gallery-text {
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.gallery-header {
+	font-size: 48px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 1;
+}
+
+.gallery-p {
+	font-size: 18px;
+	margin-left: 10%;
+}
+.last-container {
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	height: 300px;
+	padding: 0 25px;
+	background-image: url(../img/Снимок.png);
+	background-position: center;
+	-webkit-background-size:cover;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+.last-header {
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 1px solid white;
+	margin-bottom: 40px;
+}
+.last-text {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
