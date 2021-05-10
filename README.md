@@ -14,4 +14,10 @@ apt-get install git
 
 npm install tor-request
 
+git clone https://github.com/kynica1256/anonymoussearch
+
+cd anonymoussearch
+
+node index.js
+
 <pre>
