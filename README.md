@@ -24,6 +24,8 @@ npm install express
 
 npm install cheerio
 
+npm install forever -g
+
 node index.js
 
 <pre>
