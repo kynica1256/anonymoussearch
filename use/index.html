@@ -17,7 +17,7 @@
 			    	<br>
 			    	<center><p class="text-1">Мы не несем ответственности за просмотренный вами контент.</p></center>
 			    	<br>
-			    	<center><input type="button" value="Search" class="search-button" onclick="getrequests()"></center>
+			    	<center><input type="button" value="Search" class="search-button" onclick="requestsinfo();"></center>
 			    </div>
 			</div>
 		</div>
@@ -76,6 +76,15 @@
 			//document.getElementById("blockwithelem").remove();
 			document.getElementById("search-container").innerHTML = request.responseText;
 		}
+                function requestsinfo(){
+                    const value = document.getElementById("search").value;
+                    fetch(http://127.0.0.1:3000/requests?url="+window.btoa(value)).
+                    then(resp => {return resp.text()}).then(resBody => {
+                        console.log(resBody)
+                        document.getElementById("search-container").innerHTML = resBody;
+                    })
+
+                }
 	</script>
 </body>
 </html>
