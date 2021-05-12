@@ -78,7 +78,7 @@
 		}
                 function requestsinfo(){
                     const value = document.getElementById("search").value;
-                    fetch(http://127.0.0.1:3000/requests?url="+window.btoa(value)).
+                    fetch("http://127.0.0.1:3000/requests?url="+window.btoa(value)).
                     then(resp => {return resp.text()}).then(resBody => {
                         console.log(resBody)
                         document.getElementById("search-container").innerHTML = resBody;
